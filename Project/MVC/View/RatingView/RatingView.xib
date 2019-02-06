@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+        <array key="SF-UI-Text-Semibold.otf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RatingView" customModule="SmartConsumer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="505"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-aV-YHv">
+                    <rect key="frame" x="0.0" y="0.0" width="460" height="505"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.6622699058219178" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="removeFromSuperView:" destination="iN0-l3-epB" eventType="touchUpInside" id="bTo-O8-syq"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFh-tU-RHp">
+                    <rect key="frame" x="80" y="155" width="300" height="195"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate The Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi2-St-oIj">
+                            <rect key="frame" x="80" y="82" width="140" height="21"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWh-bD-c94">
+                            <rect key="frame" x="14" y="127" width="272" height="48"/>
+                            <color key="backgroundColor" red="0.81927347183227539" green="0.19965723156929016" blue="0.12037438154220581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="272" id="IIu-Lv-HoC"/>
+                                <constraint firstAttribute="height" constant="48" id="fuO-ox-IiP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="15"/>
+                            <state key="normal" title="Submit">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wk-DZ-05s" customClass="HCSStarRatingView">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.87058823529999996" green="0.31764705879999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="h9y-JN-NGU"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                    <real key="value" value="13"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="vi2-St-oIj" firstAttribute="centerX" secondItem="hFh-tU-RHp" secondAttribute="centerX" id="046-3n-EQw"/>
+                        <constraint firstAttribute="width" constant="300" id="2e7-WS-0NP"/>
+                        <constraint firstItem="vi2-St-oIj" firstAttribute="top" secondItem="2Wk-DZ-05s" secondAttribute="bottom" constant="2" id="C83-qg-52G"/>
+                        <constraint firstAttribute="trailing" secondItem="2Wk-DZ-05s" secondAttribute="trailing" id="GdT-dB-wt9"/>
+                        <constraint firstItem="2Wk-DZ-05s" firstAttribute="top" secondItem="hFh-tU-RHp" secondAttribute="top" id="Qf4-zU-Vel"/>
+                        <constraint firstItem="2Wk-DZ-05s" firstAttribute="leading" secondItem="hFh-tU-RHp" secondAttribute="leading" id="gbI-32-bQl"/>
+                        <constraint firstItem="sWh-bD-c94" firstAttribute="top" secondItem="vi2-St-oIj" secondAttribute="bottom" constant="24" id="ioj-fB-8zk"/>
+                        <constraint firstAttribute="bottom" secondItem="sWh-bD-c94" secondAttribute="bottom" constant="20" symbolic="YES" id="qKN-hX-VPG"/>
+                        <constraint firstItem="sWh-bD-c94" firstAttribute="centerX" secondItem="hFh-tU-RHp" secondAttribute="centerX" id="t3j-FJ-nG2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fQN-aV-YHv" secondAttribute="bottom" id="8Cs-Va-42q"/>
+                <constraint firstItem="hFh-tU-RHp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BLK-0V-ctg"/>
+                <constraint firstAttribute="trailing" secondItem="fQN-aV-YHv" secondAttribute="trailing" id="H6w-Rk-60p"/>
+                <constraint firstItem="fQN-aV-YHv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bmt-Dt-Cqo"/>
+                <constraint firstItem="fQN-aV-YHv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xWJ-cK-1XN"/>
+                <constraint firstItem="hFh-tU-RHp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yPi-tJ-VmF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ratingAlert" destination="hFh-tU-RHp" id="BqP-Nb-sIF"/>
+                <outlet property="ratingView" destination="2Wk-DZ-05s" id="OuX-q7-Vax"/>
+                <outlet property="submitBtn" destination="sWh-bD-c94" id="HbS-zM-n4q"/>
+            </connections>
+            <point key="canvasLocation" x="457" y="207.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+        <array key="SF-UI-Text-Semibold.otf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProductRecallView" customModule="JagrukGrahak">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="564"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnW-e0-BVk">
+                    <rect key="frame" x="0.0" y="0.0" width="403" height="564"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.62513377568493156" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="btnRemoveView:" destination="iN0-l3-epB" eventType="touchUpInside" id="dUo-JO-ZQG"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5E-Yl-dsQ">
+                    <rect key="frame" x="20" y="123" width="363" height="318.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following batch or batches of this Product is Under Recall,Please Check The Product Label before Use" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krN-yC-hvy">
+                            <rect key="frame" x="20" y="20" width="323" height="61"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batch No" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqx-eU-HZv">
+                            <rect key="frame" x="20" y="81" width="323" height="20.5"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For product return/any queries Please Contact" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUQ-8c-dH3">
+                            <rect key="frame" x="20" y="109.5" width="323" height="41"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRm-t2-M0l">
+                            <rect key="frame" x="300" y="246.5" width="43" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="gLH-de-4wN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnDone:" destination="iN0-l3-epB" eventType="touchUpInside" id="9R5-6J-wU8"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="RHY-58-VPz">
+                            <rect key="frame" x="20" y="174.5" width="323" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiH-Ia-6OW">
+                                    <rect key="frame" x="0.0" y="0.0" width="323" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhQ-SO-v8V">
+                                    <rect key="frame" x="0.0" y="16" width="323" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh0-WV-MIv">
+                                    <rect key="frame" x="0.0" y="32" width="323" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC5-Vs-qUT">
+                                    <rect key="frame" x="0.0" y="48" width="323" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.31764705879999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="krN-yC-hvy" firstAttribute="top" secondItem="S5E-Yl-dsQ" secondAttribute="top" constant="20" symbolic="YES" id="1as-Zk-VG7"/>
+                        <constraint firstItem="RHY-58-VPz" firstAttribute="leading" secondItem="lUQ-8c-dH3" secondAttribute="leading" id="3bx-Oa-v4R"/>
+                        <constraint firstAttribute="trailing" secondItem="RHY-58-VPz" secondAttribute="trailing" constant="20" symbolic="YES" id="6c4-pD-eaL"/>
+                        <constraint firstItem="RHY-58-VPz" firstAttribute="top" secondItem="lUQ-8c-dH3" secondAttribute="bottom" constant="24" id="7TF-kM-ErU"/>
+                        <constraint firstItem="xqx-eU-HZv" firstAttribute="top" secondItem="krN-yC-hvy" secondAttribute="bottom" id="Hdk-s3-eOp"/>
+                        <constraint firstItem="lUQ-8c-dH3" firstAttribute="top" secondItem="xqx-eU-HZv" secondAttribute="bottom" constant="8" id="I5H-2Q-DV0"/>
+                        <constraint firstAttribute="bottom" secondItem="cRm-t2-M0l" secondAttribute="bottom" constant="32" id="JX1-Pt-kSL"/>
+                        <constraint firstItem="xqx-eU-HZv" firstAttribute="leading" secondItem="krN-yC-hvy" secondAttribute="leading" id="KWR-f9-rff"/>
+                        <constraint firstItem="lUQ-8c-dH3" firstAttribute="trailing" secondItem="xqx-eU-HZv" secondAttribute="trailing" id="Sp4-Rl-nEs"/>
+                        <constraint firstItem="krN-yC-hvy" firstAttribute="leading" secondItem="S5E-Yl-dsQ" secondAttribute="leading" constant="20" symbolic="YES" id="a23-tw-Jht"/>
+                        <constraint firstAttribute="trailing" secondItem="krN-yC-hvy" secondAttribute="trailing" constant="20" symbolic="YES" id="cxn-PI-Qo6"/>
+                        <constraint firstAttribute="trailing" secondItem="cRm-t2-M0l" secondAttribute="trailing" constant="20" symbolic="YES" id="nIU-Ev-3H1"/>
+                        <constraint firstItem="lUQ-8c-dH3" firstAttribute="leading" secondItem="xqx-eU-HZv" secondAttribute="leading" id="pRr-N4-dMX"/>
+                        <constraint firstItem="xqx-eU-HZv" firstAttribute="trailing" secondItem="krN-yC-hvy" secondAttribute="trailing" id="qkl-qi-B3x"/>
+                        <constraint firstItem="cRm-t2-M0l" firstAttribute="top" secondItem="RHY-58-VPz" secondAttribute="bottom" constant="24" id="vY3-Qo-drn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BnW-e0-BVk" secondAttribute="trailing" id="8ER-fE-X5P"/>
+                <constraint firstItem="S5E-Yl-dsQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="NHi-w4-cpO"/>
+                <constraint firstItem="BnW-e0-BVk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Nbe-57-M7U"/>
+                <constraint firstItem="S5E-Yl-dsQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QAN-Ey-ooV"/>
+                <constraint firstAttribute="trailing" secondItem="S5E-Yl-dsQ" secondAttribute="trailing" constant="20" symbolic="YES" id="cbD-dJ-qfL"/>
+                <constraint firstItem="BnW-e0-BVk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h7J-s3-GS2"/>
+                <constraint firstItem="S5E-Yl-dsQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mZr-vc-zEz"/>
+                <constraint firstAttribute="bottom" secondItem="BnW-e0-BVk" secondAttribute="bottom" id="s8T-fe-3N4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblBatchNumber" destination="xqx-eU-HZv" id="idO-IH-eRP"/>
+                <outlet property="lblContactNum" destination="jh0-WV-MIv" id="PP0-Kp-sBm"/>
+                <outlet property="lblDesignation" destination="hhQ-SO-v8V" id="dAn-yw-2Cp"/>
+                <outlet property="lblEmail" destination="uC5-Vs-qUT" id="XOA-wB-Dbj"/>
+                <outlet property="lblName" destination="eiH-Ia-6OW" id="ZQM-Y5-rFT"/>
+                <outlet property="recallView" destination="S5E-Yl-dsQ" id="yE8-P1-5Xa"/>
+            </connections>
+            <point key="canvasLocation" x="284.5" y="336"/>
+        </view>
+    </objects>
+</document>
