@@ -69,6 +69,11 @@ class BarcodeModal: NSObject {
     var cgst : String?
     var sgst : String?
     var igst : String?
+    var height : String?
+    var width : String?
+    var depth : String?
+    var dimensionUnit : String?
+    var marketing : String?
     init(json:JSON) {
         super.init()
         desct = json["description"].stringValue
@@ -131,6 +136,12 @@ class BarcodeModal: NSObject {
            cgst = json["cgst"].stringValue
            sgst = json["sgst"].stringValue
            igst = json["igst"].stringValue
+         height = json["dimensions"]["height"].stringValue
+         width = json["dimensions"]["width"].stringValue
+         depth = json["dimensions"]["depth"].stringValue
+        dimensionUnit = json["dimensions"]["measurement_unit"].stringValue
+
+        marketing = json["marketing_info"].stringValue
         
         let value = json["attributes"]["shelf_life"]["child"]["value"].stringValue
         let unit = json["attributes"]["shelf_life"]["child"]["unit"].stringValue

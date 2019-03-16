@@ -39,7 +39,7 @@ class BaseViewController: UIViewController, SJSegmentedViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        appDelegate.showSharePopUP()
+     //   appDelegate.showSharePopUP()
     }
     
    
@@ -288,6 +288,14 @@ class BaseViewController: UIViewController, SJSegmentedViewControllerDelegate {
                 }
                 
                 }
+            
+            if modal?.marketing != nil && modal?.marketing != ""{
+                if let tenthViewController = storyboard.instantiateViewController(withIdentifier: "MarketingVC") as? MarketingVC{
+                    tenthViewController.title = "Marketing"
+                tenthViewController.setData(txt: (modal?.marketing!)!)
+                arrayControllers.append(tenthViewController)
+                }
+            }
             segmentedViewController.headerViewController = headerViewController
             segmentedViewController.segmentControllers = arrayControllers
 

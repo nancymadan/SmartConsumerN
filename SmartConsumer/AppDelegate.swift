@@ -47,16 +47,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //---------------------------------------------------------------------
         // Splash Screen
         //
-        if let time = UserDefaults.standard.value(forKey: "SmartConsumerSplashTime")  as? Date{
-            let components = Calendar.current.dateComponents([.hour], from: time, to: Date())
-            let diff = components.hour!
-            if diff < 24{
-                return true
-            }
-        }
-        UserDefaults.standard.set(Date(), forKey: "SmartConsumerSplashTime")
-        createSplash()
-        addNotifications()
+//        if let time = UserDefaults.standard.value(forKey: "SmartConsumerSplashTime")  as? Date{
+//            let components = Calendar.current.dateComponents([.hour], from: time, to: Date())
+//            let diff = components.hour!
+//            if diff < 24{
+//                return true
+//            }
+//        }
+//        UserDefaults.standard.set(Date(), forKey: "SmartConsumerSplashTime")
+   ///    createSplash()
+//        addNotifications()
    
         return true
     }

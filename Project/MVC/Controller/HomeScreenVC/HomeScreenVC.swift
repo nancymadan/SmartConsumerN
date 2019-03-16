@@ -9,6 +9,7 @@
 import UIKit
 import SJSegmentedScrollView
 import SwiftyJSON
+import SafariServices
 //import Crashlytics
 import BarcodeScanner
 
@@ -30,7 +31,7 @@ class HomeScreenVC: UIViewController , DelegateFromBaseController , DelegateFrom
         super.viewDidLoad()
         setupUI()
       
-      txtBarcodeNo.text = "8906103950070"
+      txtBarcodeNo.text = ""
          self.animateShareButton()
     }
     
@@ -160,7 +161,21 @@ extension HomeScreenVC: BarcodeScannerCodeDelegate {
     func scanner(_ controller: BarcodeScannerViewController, didCaptureCode code: String, type: String) {
         print("Barcode Data: \(code)")
         print("Symbology Type: \(type)")
-        
+        if code.contains("smartconsumer.org.in"){
+            controller.dismiss(animated: false, completion: nil)
+
+            kMainQueue.asyncAfter(deadline: .now()+0.5) {
+            if let url = URL.init(string: code){
+                
+          // UIApplication.shared.open(url)
+                let svc = SFSafariViewController(url: url)
+                
+                self.present(svc, animated: true, completion: {
+                })
+            }
+            }
+          return
+        }
       //  controller.reset()
         kMainQueue.asyncAfter(deadline: .now()+0.1) {
             controller.dismiss(animated: true, completion: nil)

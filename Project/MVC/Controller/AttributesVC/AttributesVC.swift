@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import SJSegmentedScrollView
 
-
-class AttributesVC: BaseViewController{
+class AttributesVC: BaseViewController,SJSegmentedViewControllerViewSource{
     
    private var modalBar : BarcodeModal?
     
+    @IBOutlet weak var myscroll: UIScrollView!
     @IBOutlet weak var lblNetContent: UILabel!
     @IBOutlet weak var btnWebsite: UIButton!
     @IBOutlet weak var lblGrossWt: UILabel!
     
+    @IBOutlet weak var lblDepth: UILabel!
+    @IBOutlet weak var lblHeight: UILabel!
+    @IBOutlet weak var lblWidth: UILabel!
     @IBOutlet weak var lblProductName: UILabel!
     @IBOutlet weak var lblBrandName: UILabel!
     @IBOutlet weak var lblGTINNo: UILabel!
@@ -59,6 +63,10 @@ class AttributesVC: BaseViewController{
         else{
             self.btnWebsite.isHidden = true
         }
+        self.lblDepth.text = (modalBar?.depth ?? "--") + " " + (modalBar?.measurementUnit ?? "")
+        self.lblWidth.text = (modalBar?.width ?? "--") + " " + (modalBar?.measurementUnit ?? "")
+        self.lblHeight.text = (modalBar?.height ?? "--") + " " + (modalBar?.measurementUnit ?? "")
+
         
     }
     
@@ -76,5 +84,7 @@ class AttributesVC: BaseViewController{
     }
     
     
-
+    func viewForSegmentControllerToObserveContentOffsetChange() -> UIView {
+        return self.myscroll
+    }
 }
