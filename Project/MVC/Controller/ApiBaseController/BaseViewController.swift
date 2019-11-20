@@ -460,7 +460,7 @@ extension BaseViewController {
         APIManager().postWebRequest(urlString: "https://gs1datakart.org/api/v5/feedback?apiId=df4a3e288e73d4e3d6e4a975a0c3212d&apiKey=440f00981a1cc3b1ce6a4c784a4b84ea", Parameters: dict , jsonBody: false, successResponse: { (response) in
             
             SharedClass.shared.removeLoader()
-            self.showAlert(msg: "Thankyou for your feedback")
+            self.showAlert(msg: "Thank you for your feedback")
             
             },failureResponse: { (failure) in
                 print(failure)
