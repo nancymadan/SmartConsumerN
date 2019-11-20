@@ -23,7 +23,7 @@ class ImagesCell: UICollectionViewCell {
     func configureCell(item : String) {
         videoPlayer.isHidden = true
         
-        if item.contains("https://youtu") {
+        if item.contains("youtube") {
             print("Youtube URL")
             print(item)
             

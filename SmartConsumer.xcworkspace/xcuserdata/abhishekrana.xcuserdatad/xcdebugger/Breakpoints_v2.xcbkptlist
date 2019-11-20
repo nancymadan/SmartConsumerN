@@ -9,24 +9,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SmartConsumer/AppDelegate.swift"
-            timestampString = "570393460.329161"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
-            timestampString = "571086181.785758"
+            timestampString = "595965280.22583"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -42,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/HomeScreenVC/HomeScreenVC.swift"
-            timestampString = "570738359.700137"
+            timestampString = "593115347.037869"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
@@ -58,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/ApiRequestFiles/APIManager/APIManager.swift"
-            timestampString = "571086181.785862"
+            timestampString = "595965280.225964"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "getWebRequest(urlString:key:Parameters:successResponse:failureResponse:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
-            timestampString = "571086181.785951"
+            timestampString = "595965280.226076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "getGtinNumber(gtinNumber:controller:)"
             landmarkType = "7">
             <Locations>
@@ -105,13 +89,13 @@
                   symbolName = "JagrukGrahak.BaseViewController.getGtinNumber(gtinNumber: Swift.String, controller: __C.UIViewController) -&gt; ()"
                   moduleName = "JagrukGrahak"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/My%20Drive/SmartConsumer/Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
-                  timestampString = "570735562.97192"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
+                  timestampString = "595963334.833353"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "412">
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "2151">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -120,13 +104,13 @@
                   symbolName = "closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in JagrukGrahak.BaseViewController.getGtinNumber(gtinNumber: Swift.String, controller: __C.UIViewController) -&gt; ()"
                   moduleName = "JagrukGrahak"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/My%20Drive/SmartConsumer/Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
-                  timestampString = "570735562.9747061"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
+                  timestampString = "595963334.8415329"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "56">
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "65">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -138,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/HomeScreenVC/HomeScreenVC.swift"
-            timestampString = "570738359.700394"
+            timestampString = "593115347.03835"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"
@@ -186,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
-            timestampString = "570734621.595909"
+            timestampString = "595965280.226221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "getData(urlStr:paramaters:successB:failure:)"
             landmarkType = "7">
             <Locations>
@@ -230,113 +214,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Project/ApiRequestFiles/APIManager/APIManager.swift"
-            timestampString = "571086181.786091"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "getWebRequest(urlString:key:Parameters:successResponse:failureResponse:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "JagrukGrahak.APIManager.getWebRequest(urlString: Swift.Optional&lt;Swift.String&gt;, key: Swift.String, Parameters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, successResponse: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failureResponse: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "JagrukGrahak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/My%20Drive/SmartConsumer/Project/ApiRequestFiles/APIManager/APIManager.swift"
-                  timestampString = "570735562.997594"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in JagrukGrahak.APIManager.getWebRequest(urlString: Swift.Optional&lt;Swift.String&gt;, key: Swift.String, Parameters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, successResponse: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failureResponse: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "JagrukGrahak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/My%20Drive/SmartConsumer/Project/ApiRequestFiles/APIManager/APIManager.swift"
-                  timestampString = "570735563.001261"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
-            timestampString = "570734621.596118"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "getData(urlStr:paramaters:successB:failure:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in JagrukGrahak.HTTPClient.getData(urlStr: Swift.String, paramaters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, successB: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "JagrukGrahak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/My%20Drive/SmartConsumer/Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
-                  timestampString = "570735563.012675"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in JagrukGrahak.HTTPClient.getData(urlStr: Swift.String, paramaters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, successB: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "JagrukGrahak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/My%20Drive/SmartConsumer/Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
-                  timestampString = "570735563.0154099"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/HomeScreenVC/HomeScreenVC.swift"
-            timestampString = "570738359.7006119"
+            timestampString = "593115347.038473"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "172"
             endingLineNumber = "172"
             landmarkName = "scanner(_:didCaptureCode:type:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in JagrukGrahak.HomeScreenVC.scanner(_: BarcodeScanner.BarcodeScannerViewController, didCaptureCode: Swift.String, type: Swift.String) -&gt; ()"
+                  moduleName = "JagrukGrahak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/MVC/Controller/HomeScreenVC/HomeScreenVC.swift"
+                  timestampString = "595965280.279235"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in JagrukGrahak.HomeScreenVC.scanner(_: BarcodeScanner.BarcodeScannerViewController, didCaptureCode: Swift.String, type: Swift.String) -&gt; ()"
+                  moduleName = "JagrukGrahak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/MVC/Controller/HomeScreenVC/HomeScreenVC.swift"
+                  timestampString = "595965280.283782"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -346,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/ApiRequestFiles/APIManager/APIManager.swift"
-            timestampString = "571086181.786191"
+            timestampString = "595965280.226745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "getWebRequest(urlString:key:Parameters:successResponse:failureResponse:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -394,7 +314,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
-            timestampString = "571086181.786293"
+            timestampString = "595965280.226872"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "233"
@@ -426,7 +346,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
-            timestampString = "571086181.786446"
+            timestampString = "595965280.226966"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "240"
@@ -442,7 +362,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
-            timestampString = "571086181.786523"
+            timestampString = "595965280.227031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "256"
@@ -458,7 +378,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
-            timestampString = "571086181.7866"
+            timestampString = "595965280.227095"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "230"
@@ -474,7 +394,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
-            timestampString = "571086181.786675"
+            timestampString = "595965280.227159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "238"
@@ -489,13 +409,13 @@
                   symbolName = "JagrukGrahak.FeedbackVC.btnSubmit(Swift.AnyObject) -&gt; ()"
                   moduleName = "JagrukGrahak"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/My%20Drive/SmartConsumer/Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
-                  timestampString = "571086091.130291"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
+                  timestampString = "595965280.339846"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "238"
                   endingLineNumber = "238"
-                  offsetFromSymbolStart = "3756">
+                  offsetFromSymbolStart = "4460">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -504,13 +424,13 @@
                   symbolName = "closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in JagrukGrahak.FeedbackVC.btnSubmit(Swift.AnyObject) -&gt; ()"
                   moduleName = "JagrukGrahak"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/My%20Drive/SmartConsumer/Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
-                  timestampString = "571086091.133345"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
+                  timestampString = "595965280.343737"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "240"
                   endingLineNumber = "240"
-                  offsetFromSymbolStart = "36">
+                  offsetFromSymbolStart = "49">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -522,7 +442,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
-            timestampString = "571086181.786744"
+            timestampString = "595965280.227224"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "162"
@@ -538,7 +458,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
-            timestampString = "571086181.786816"
+            timestampString = "595965280.227288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "163"
@@ -554,7 +474,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/HomeScreenVC/HomeScreenVC.swift"
-            timestampString = "571078100.209132"
+            timestampString = "593115347.038726"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
@@ -570,7 +490,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/FeedbackVC/FeedbackVC.swift"
-            timestampString = "571086181.786906"
+            timestampString = "595965280.227376"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
@@ -586,12 +506,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/ApiRequestFiles/APIManager/APIManager.swift"
-            timestampString = "571086181.786971"
+            timestampString = "595965280.227441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "postWebRequest(urlString:Parameters:successResponse:failureResponse:)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "postWebRequest(urlString:Parameters:jsonBody:successResponse:failureResponse:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -602,12 +522,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/ApiRequestFiles/APIManager/APIManager.swift"
-            timestampString = "571086181.7870311"
+            timestampString = "595965280.227514"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "postWebRequest(urlString:Parameters:successResponse:failureResponse:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "postWebRequest(urlString:Parameters:jsonBody:successResponse:failureResponse:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
+            timestampString = "595965280.22759"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "getSJSegmentedViewController(modal:controller:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
+            timestampString = "595965280.227657"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "getSJSegmentedViewController(modal:controller:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project/MVC/Controller/HomeScreenVC/HomeScreenVC.swift"
+            timestampString = "593115347.039811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "btnGo(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -617,44 +585,60 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
-            timestampString = "571084887.8789589"
+            filePath = "Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
+            timestampString = "595965280.227749"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "postData(urlStr:paramaters:success:failure:)"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "getGtinNumber(gtinNumber:controller:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
+            timestampString = "595965280.227818"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "getContactDetails(gtinNumber:controller:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in JagrukGrahak.HTTPClient.postData(urlStr: Swift.String, paramaters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, success: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "JagrukGrahak.BaseViewController.getContactDetails(gtinNumber: Swift.String, controller: __C.UIViewController) -&gt; ()"
                   moduleName = "JagrukGrahak"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/My%20Drive/SmartConsumer/Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
-                  timestampString = "571086091.164176"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
+                  timestampString = "595963334.9563659"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "52">
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "561">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in JagrukGrahak.HTTPClient.postData(urlStr: Swift.String, paramaters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, success: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in JagrukGrahak.BaseViewController.getContactDetails(gtinNumber: Swift.String, controller: __C.UIViewController) -&gt; ()"
                   moduleName = "JagrukGrahak"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/My%20Drive/SmartConsumer/Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
-                  timestampString = "571086091.1674"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
+                  timestampString = "595963334.960313"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "40">
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "57">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -666,12 +650,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
-            timestampString = "571086181.787112"
+            timestampString = "595965280.227885"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
-            landmarkName = "getSJSegmentedViewController(modal:controller:)"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "getContactDetails(gtinNumber:controller:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -681,14 +665,142 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Project/MVC/Controller/ApiBaseController/BaseViewController.swift"
-            timestampString = "571086181.7871751"
+            filePath = "Project/ApiRequestFiles/APIManager/APIManager.swift"
+            timestampString = "595965280.227953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
-            landmarkName = "getSJSegmentedViewController(modal:controller:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "postWebRequest(urlString:Parameters:jsonBody:successResponse:failureResponse:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JagrukGrahak.APIManager.postWebRequest(urlString: Swift.Optional&lt;Swift.String&gt;, Parameters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, jsonBody: Swift.Bool, successResponse: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failureResponse: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JagrukGrahak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/ApiRequestFiles/APIManager/APIManager.swift"
+                  timestampString = "595965280.40885"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in JagrukGrahak.APIManager.postWebRequest(urlString: Swift.Optional&lt;Swift.String&gt;, Parameters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, jsonBody: Swift.Bool, successResponse: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failureResponse: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JagrukGrahak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/ApiRequestFiles/APIManager/APIManager.swift"
+                  timestampString = "595965280.412275"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
+            timestampString = "595965280.228026"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "postData(urlStr:paramaters:jsonBody:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JagrukGrahak.HTTPClient.postData(urlStr: Swift.String, paramaters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, jsonBody: Swift.Bool, success: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JagrukGrahak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
+                  timestampString = "595965280.422805"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "3126">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in JagrukGrahak.HTTPClient.postData(urlStr: Swift.String, paramaters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, jsonBody: Swift.Bool, success: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JagrukGrahak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
+                  timestampString = "595965280.426953"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
+            timestampString = "595965280.228461"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "postData(urlStr:paramaters:jsonBody:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JagrukGrahak.HTTPClient.postData(urlStr: Swift.String, paramaters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, jsonBody: Swift.Bool, success: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JagrukGrahak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
+                  timestampString = "595965280.4380471"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1577">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in JagrukGrahak.HTTPClient.postData(urlStr: Swift.String, paramaters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, jsonBody: Swift.Bool, success: (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure: (Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JagrukGrahak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Drive/Nancy/Latest/SmartConsumer%202/Project/ApiRequestFiles/HTTPClient/HTTPClient.swift"
+                  timestampString = "595965280.442672"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

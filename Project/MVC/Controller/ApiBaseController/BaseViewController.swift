@@ -18,7 +18,7 @@ protocol DelegateFromBaseController {
 
 let kMainQueue = DispatchQueue.main
 
-let urlGtin = "https://gs1datakart.org/api/v5/products.q(format=json;gtin="
+let urlGtin = "https://gs1datakart.org/api/v5/products?"
 let urlCompany = "https://gs1datakart.org/gepir_new/companyinfo.php?gtin="
 
 class BaseViewController: UIViewController, SJSegmentedViewControllerDelegate {
@@ -39,20 +39,18 @@ class BaseViewController: UIViewController, SJSegmentedViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        appDelegate.showSharePopUP()
+     //   appDelegate.showSharePopUP()
     }
     
    
     
     func getGtinNumber(gtinNumber : String , controller : UIViewController )  {
-        
-        let dict = ["apiId" : "a678a9f658507c000ae41ec9d5969c40" , "apiKey" : "f5b127fd16af2efe5fb4b2396c371697"]
-        SharedClass.shared.loaderGif ()
         let uniqueId = UIDevice.current.identifierForVendor!.uuidString
-        APIManager().getWebRequest(urlString:"\(urlGtin)\(gtinNumber);imei=\(uniqueId);latitude=\(0);longitude=\(0)))",key : "ProductsApi", Parameters : dict as [String : AnyObject], successResponse: { (success) in
-            
-            if let arrayModal = success as? [BarcodeModal]{
+        let dict = ["gtin" : gtinNumber , "imei" : uniqueId,"latitude": "29.9500558","longitude" : "76.0559266","device_id":uniqueId,"device_token":""]
+        SharedClass.shared.loaderGif ()
+        APIManager().postWebRequest(urlString:"\(urlGtin)apiId=a678a9f658507c000ae41ec9d5969c40&apiKey=f5b127fd16af2efe5fb4b2396c371697", Parameters : dict as [String : AnyObject], jsonBody: true, successResponse: { (success) in
             SharedClass.shared.removeLoader()
+            if let arrayModal = success as? [BarcodeModal]{
                 if arrayModal.count > 0{
                     let modal = arrayModal[0]
                      print(modal.licNo)
@@ -82,7 +80,7 @@ class BaseViewController: UIViewController, SJSegmentedViewControllerDelegate {
             }
             
         },failureResponse: { (failure) in
-            print(failure)
+            print(failure?.localizedDescription)
             SharedClass.shared.removeLoader()
             self.showAlert(msg: "Some Error Occured !!",title: "Oops !!", controller: controller)
         })
@@ -103,7 +101,7 @@ class BaseViewController: UIViewController, SJSegmentedViewControllerDelegate {
                 if !((modal2.name?.isEmpty)!){
                     if self.NoProductFound == true{
                         self.manuController?.setDataModal(modal: modal2)
-                        controller.navigationController?.pushViewController(self.manuController!,
+                    controller.navigationController?.pushViewController(self.manuController!,
                             animated: true)
                     }else{
                         self.secondViewController?.getDataFromModal(modal: modal2)
@@ -119,9 +117,10 @@ class BaseViewController: UIViewController, SJSegmentedViewControllerDelegate {
                     
                     
                 }else if modal2.code == "validation" || modal2.code == "checkdigit"{
-                    self.showAlert(msg: "Invalid number",title: "Sorry", controller: controller)
+                    SharedClass.shared.removeLoader()
+                  //  self.showAlert(msg: "Invalid number",title: "Sorry", controller: controller)
                 }else if self.NoProductFound == true{
-                    self.showAlert(msg: "Product details and images not provided by manufacturer in DataKart",title: "Sorry", controller: controller)
+                   // self.showAlert(msg: "Product details and images not provided by manufacturer in DataKart",title: "Sorry", controller: controller)
                 }else{
                     if (self.dict["companyName"]) != nil{
                         let df = DateFormatter()
@@ -137,7 +136,7 @@ class BaseViewController: UIViewController, SJSegmentedViewControllerDelegate {
             else{
                 
                 SharedClass.shared.removeLoader()
-                self.showAlert(msg: "No records Found",title: "Sorry", controller: controller)
+             //   self.showAlert(msg: "No records Found",title: "Sorry", controller: controller)
                 
             }
             
@@ -288,6 +287,14 @@ class BaseViewController: UIViewController, SJSegmentedViewControllerDelegate {
                 }
                 
                 }
+            
+            if modal?.marketing != nil && modal?.marketing != ""{
+                if let tenthViewController = storyboard.instantiateViewController(withIdentifier: "MarketingVC") as? MarketingVC{
+                    tenthViewController.title = "Marketing"
+                tenthViewController.setData(txt: (modal?.marketing!)!)
+                arrayControllers.append(tenthViewController)
+                }
+            }
             segmentedViewController.headerViewController = headerViewController
             segmentedViewController.segmentControllers = arrayControllers
 
@@ -450,7 +457,7 @@ extension BaseViewController {
         let dict : [String : AnyObject] = ["email_id":"No email" as AnyObject, "batch_no" : "-" as AnyObject,"contact_no":"-" as AnyObject,"complaint":"kjnk" as AnyObject, "complaint_id": "0" as AnyObject,"gtin":gtin as AnyObject,"product_desc": productDesc as AnyObject ,"product_name" : productName as AnyObject,"rating" :rating as AnyObject]
         
         
-        APIManager().postWebRequest(urlString: "https://gs1datakart.org/api/v5/feedback?apiId=df4a3e288e73d4e3d6e4a975a0c3212d&apiKey=440f00981a1cc3b1ce6a4c784a4b84ea", Parameters: dict, successResponse: { (response) in
+        APIManager().postWebRequest(urlString: "https://gs1datakart.org/api/v5/feedback?apiId=df4a3e288e73d4e3d6e4a975a0c3212d&apiKey=440f00981a1cc3b1ce6a4c784a4b84ea", Parameters: dict , jsonBody: false, successResponse: { (response) in
             
             SharedClass.shared.removeLoader()
             self.showAlert(msg: "Thankyou for your feedback")

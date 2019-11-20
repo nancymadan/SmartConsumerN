@@ -17,11 +17,14 @@ class APIManager: NSObject {
     var apiHandler : APIHandler?
     var httpClient : HTTPClient?
     
-    func postWebRequest(urlString : String? , Parameters: [String : AnyObject] , successResponse : @escaping successBlock , failureResponse : @escaping failureBlock)  {
+    func postWebRequest(urlString : String? , Parameters: [String : AnyObject], jsonBody : Bool , successResponse : @escaping successBlock , failureResponse : @escaping failureBlock)  {
         
-        HTTPClient().postData(urlStr: urlString ?? "", paramaters: Parameters , success: { (success) in
+        
+        HTTPClient().postData(urlStr: urlString ?? "", paramaters: Parameters, jsonBody: jsonBody , success: { (success) in
+            let modal = APIHandler().handleUrl(url: "ProductsApi", response: success!)
             
-            successResponse(success)
+            successResponse(modal)
+           // successResponse(success)
             
             }, failure: { (failure) in
                 failureResponse(failure)

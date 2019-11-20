@@ -21,7 +21,8 @@ class SettingsSidebar: UIViewController {
     }
     
     func setupUI() {
-        array = ["About the App","Contact Details","Disclamer","Share App","Video"]
+        //array = ["About the App","Contact Details","Disclamer","Share App","Video"]
+        array = ["About the App","Contact Details","Disclamer"]
         setTableData()
     }
     

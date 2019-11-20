@@ -64,7 +64,7 @@ class RegistrationController: UIViewController {
         if value == 0 {
             SharedClass.shared.loaderGif()
             
-            APIManager().postWebRequest(urlString: "https://gs1datakart.org/api/v5/register?apiId=df4a3e288e73d4e3d6e4a975a0c3212d&apiKey=440f00981a1cc3b1ce6a4c784a4b84ea", Parameters: parametersDict(), successResponse: { (response) in
+            APIManager().postWebRequest(urlString: "https://gs1datakart.org/api/v5/register?apiId=df4a3e288e73d4e3d6e4a975a0c3212d&apiKey=440f00981a1cc3b1ce6a4c784a4b84ea", Parameters: parametersDict(), jsonBody: false, successResponse: { (response) in
                 
                 SharedClass.shared.removeLoader()
                 let json =   JSON(response!)

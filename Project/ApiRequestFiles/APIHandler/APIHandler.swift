@@ -31,7 +31,7 @@ class APIHandler: NSObject {
             return modal
             
         default:
-            return "" as AnyObject
+            return response as AnyObject
         }
         
     }

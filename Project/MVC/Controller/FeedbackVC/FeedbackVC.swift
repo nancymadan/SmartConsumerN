@@ -216,7 +216,7 @@ class FeedbackVC: UIViewController,UITextFieldDelegate{
     }
     
     @IBAction func actionSelectState(_ sender: Any) {
-        let arr = ["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal"]
+        let arr = ["Andaman And Nicobar Islands","Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chandigarh","Chhattisgarh","Dadra And Nagar Haveli","Daman And Diu","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Lakshadweep","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","New Delhi","Odisha","Puducherry","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal"]
         let actionSheet = UIAlertController.init(title: "Select State", message: nil, preferredStyle: .actionSheet)
         for state in arr{
             actionSheet.addAction(UIAlertAction.init(title: state, style: .default, handler: { (_) in
@@ -235,7 +235,7 @@ class FeedbackVC: UIViewController,UITextFieldDelegate{
            // SharedClass.shared.overlay()
             SharedClass.shared.loaderGif ()
 
-            APIManager().postWebRequest(urlString: "https://gs1datakart.org/api/v5/feedback?apiId=df4a3e288e73d4e3d6e4a975a0c3212d&apiKey=440f00981a1cc3b1ce6a4c784a4b84ea", Parameters: parametersDict(), successResponse: { (response) in
+            APIManager().postWebRequest(urlString: "https://gs1datakart.org/api/v5/feedback?apiId=df4a3e288e73d4e3d6e4a975a0c3212d&apiKey=440f00981a1cc3b1ce6a4c784a4b84ea", Parameters: parametersDict(), jsonBody: false, successResponse: { (response) in
                 
                 SharedClass.shared.removeLoader()
                 

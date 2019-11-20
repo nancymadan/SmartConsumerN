@@ -19,9 +19,9 @@ class SubmitRating {
     guard let gtin = dictInfo["gtinNumber"] else {return}
     guard let productName = dictInfo["productName"] else {return}
     
-    let dict : [String : AnyObject] = ["complaint_id": "0" as AnyObject,"gtin":gtin as AnyObject,"product_desc": productDesc as AnyObject ,"product_name" : productName as AnyObject,"rating" :rating as AnyObject]
+    let dict : [String : AnyObject] = ["complaint_id": "0" as AnyObject,"gtin":gtin as AnyObject,"product_desc": productDesc as AnyObject,"product_name" : productName as AnyObject,"rating" :rating as AnyObject]
     
-    APIManager().postWebRequest(urlString: "https://gs1datakart.org/api/v5/feedback?apiId=df4a3e288e73d4e3d6e4a975a0c3212d&apiKey=440f00981a1cc3b1ce6a4c784a4b84ea", Parameters: dict, successResponse: { (response) in
+    APIManager().postWebRequest(urlString: "https://gs1datakart.org/api/v5/feedback?apiId=df4a3e288e73d4e3d6e4a975a0c3212d&apiKey=440f00981a1cc3b1ce6a4c784a4b84ea", Parameters: dict, jsonBody: false , successResponse: { (response) in
         
         SharedClass.shared.removeLoader()
         guard let response = response else {return}

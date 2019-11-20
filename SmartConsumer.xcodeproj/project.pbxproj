@@ -10,6 +10,7 @@
 		6304566D2204BE5A00554881 /* GSTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6304566C2204BE5A00554881 /* GSTViewController.swift */; };
 		63CAA0672200E2890043A579 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CAA0662200E2890043A579 /* ProductDetailVC.swift */; };
 		7E8B5F8C0F17B73089EAA888 /* Pods_SmartConsumer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35BFB147236A53DC221726C /* Pods_SmartConsumer.framework */; };
+		D755FEDE22290B1600B04D83 /* MarketingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D755FEDD22290B1600B04D83 /* MarketingVC.swift */; };
 		D97EAED2218152B1009C5DD6 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EAECD218152B1009C5DD6 /* APIHandler.swift */; };
 		D97EAED3218152B1009C5DD6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EAECF218152B1009C5DD6 /* HTTPClient.swift */; };
 		D97EAED4218152B1009C5DD6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EAED1218152B1009C5DD6 /* APIManager.swift */; };
@@ -129,6 +130,7 @@
 		63CAA0662200E2890043A579 /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
 		711A8FE146BE71AEE0F112A1 /* Pods-SmartConsumer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartConsumer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartConsumer/Pods-SmartConsumer.debug.xcconfig"; sourceTree = "<group>"; };
 		9F7B1BC65BB9EC561130310F /* Pods-SmartConsumer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartConsumer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartConsumer/Pods-SmartConsumer.release.xcconfig"; sourceTree = "<group>"; };
+		D755FEDD22290B1600B04D83 /* MarketingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingVC.swift; sourceTree = "<group>"; };
 		D97EAECD218152B1009C5DD6 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		D97EAECF218152B1009C5DD6 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		D97EAED1218152B1009C5DD6 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -283,6 +285,14 @@
 				9F7B1BC65BB9EC561130310F /* Pods-SmartConsumer.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D755FEDC22290AEB00B04D83 /* MarketingVC */ = {
+			isa = PBXGroup;
+			children = (
+				D755FEDD22290B1600B04D83 /* MarketingVC.swift */,
+			);
+			path = MarketingVC;
 			sourceTree = "<group>";
 		};
 		D97EAECA218152A3009C5DD6 /* Project */ = {
@@ -684,6 +694,7 @@
 		D97EAFD621816580009C5DD6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D755FEDC22290AEB00B04D83 /* MarketingVC */,
 				D97EAFD721816580009C5DD6 /* WebViewVC */,
 				D97EAFD921816580009C5DD6 /* ApiBaseController */,
 				D97EAFDB21816580009C5DD6 /* BISViewController */,
@@ -1150,6 +1161,7 @@
 				D97EAED2218152B1009C5DD6 /* APIHandler.swift in Sources */,
 				D97EAFB621815ACC009C5DD6 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				D97EAF0D218155EA009C5DD6 /* SubmitRating.swift in Sources */,
+				D755FEDE22290B1600B04D83 /* MarketingVC.swift in Sources */,
 				D97EB01921816580009C5DD6 /* MRPController.swift in Sources */,
 				D97EAFB921815ACC009C5DD6 /* AFImageDownloader.m in Sources */,
 				D97EAFBB21815ACC009C5DD6 /* AFHTTPSessionManager.m in Sources */,
@@ -1364,7 +1376,7 @@
 			baseConfigurationReference = 711A8FE146BE71AEE0F112A1 /* Pods-SmartConsumer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nitesh Kumar (95B88JQS6B)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8X7G532EA3;
 				INFOPLIST_FILE = SmartConsumer/Info.plist;
@@ -1377,7 +1389,7 @@
 				PRODUCT_NAME = JagrukGrahak;
 				PROVISIONING_PROFILE_SPECIFIER = SmartConsumerDev;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1386,7 +1398,7 @@
 			baseConfigurationReference = 9F7B1BC65BB9EC561130310F /* Pods-SmartConsumer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nitesh Kumar (95B88JQS6B)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8X7G532EA3;
 				INFOPLIST_FILE = SmartConsumer/Info.plist;
@@ -1397,9 +1409,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.codebrew.JagrukGrahak;
 				PRODUCT_NAME = JagrukGrahak;
-				PROVISIONING_PROFILE_SPECIFIER = SmartConsumerDev;
+				PROVISIONING_PROFILE_SPECIFIER = SmartConsumerAppStore;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
